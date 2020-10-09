@@ -1,0 +1,34 @@
+    <html lang="es">
+        <body>
+            <font color="darkblue" size="5">Ingresar Persona</font>
+            <form action="hub.php" method="POST">
+            <input type="hidden" name="Destino" value="IngresarPersona;">
+                <table>
+                    <tr>
+                        <td>Documento de Identificaci&oacute;n:</td>
+                        <td><input type="number" name="idPersona" ></td>
+                    </tr>
+                    <tr>
+                        <td> Nombre:</td>
+                        <td><input type="text" name="nombrePersona" ></td>
+                    </tr>
+                    <tr>
+                        <td> Apellido:</td>
+                        <td><input type="text" name="apellidoPersona" ></td>
+                    </tr>
+                    <tr>
+                        <td> Fecha de Nacimiento:</td>
+                        <td><input type="date" name="fecPersona" ></td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <button name ="Ingresar" type ="Submit">Ingresar</button>
+                        </td>
+                        <td>
+                        <button name ="Cancelar" type="button" onclick="location.href = 'Personas.php';">Cancelar</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </body>
+    </html>
